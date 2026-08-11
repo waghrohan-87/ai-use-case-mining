@@ -1,0 +1,87 @@
+Customer: Acme Technologies
+Meeting: Engineering Onboarding Discussion
+Date: 2026-08-04
+
+Participants:
+- Emily Carter, Director of Engineering
+- Sameer Joshi, Engineering Manager
+- Daniel Park, Senior Software Engineer
+- Priya Shah, Customer Success Manager
+
+Priya:
+I'd like to understand how new engineers get productive when they join the
+organization.
+
+Emily:
+That's definitely an area we'd like to improve. We hire engineers regularly,
+and getting them productive takes longer than we'd like.
+
+Sameer:
+The biggest issue is that there's a lot they need to learn. They have to
+understand our architecture, services, development process, and internal
+tools.
+
+Daniel:
+When I joined, I spent a lot of time asking other engineers questions. Even
+now, when someone new joins my team, I spend several hours helping them
+understand the codebase.
+
+Priya:
+Is there formal documentation for this?
+
+Sameer:
+There is documentation, but it's spread across Confluence, GitHub, and
+internal wikis. Some of it is useful, but it doesn't always explain how
+everything fits together.
+
+Emily:
+We also have recorded training sessions, but people don't always know which
+ones are relevant to their role.
+
+Daniel:
+A new engineer might ask me, "How does the payments service communicate with
+the customer service?" I can explain it, but finding that answer in our
+documentation can take much longer.
+
+Priya:
+How much time do experienced engineers spend helping new people?
+
+Daniel:
+Probably two to four hours a week during the first month for each new hire.
+
+Sameer:
+And that varies depending on how complicated the area is.
+
+Emily:
+I'd be interested in an AI assistant that could answer onboarding questions
+using our internal documentation and codebase.
+
+Daniel:
+I'd use something like that, but it would need to show where the answer came
+from. I wouldn't trust an answer without references.
+
+Sameer:
+It would also need to understand the person's role. A backend developer
+doesn't need the same information as a QA engineer.
+
+Priya:
+Would you be comfortable piloting that?
+
+Emily:
+Yes. Start with a small group of new engineers and compare how quickly they
+reach their first independent contribution.
+
+Daniel:
+I'd also measure how many questions they need to ask senior engineers.
+
+Sameer:
+If we can reduce the mentoring burden without making onboarding worse, that
+would be a meaningful improvement.
+
+Priya:
+So the pilot could focus on engineering onboarding, with source-grounded
+answers and role-specific guidance.
+
+Emily:
+Exactly.
+

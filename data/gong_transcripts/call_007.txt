@@ -1,0 +1,82 @@
+Customer: Acme Technologies
+Meeting: Engineering Planning Workflow Review
+Date: 2026-08-01
+
+Participants:
+- Robert Miller, VP Engineering
+- Aisha Khan, Engineering Manager
+- Vikram Singh, Senior Software Engineer
+- Priya Shah, Customer Success Manager
+
+Priya:
+I'd like to understand where the team spends time before developers actually
+start writing code.
+
+Robert:
+Requirement refinement is one area. Product gives us requirements, but they
+aren't always detailed enough for engineering to start immediately.
+
+Aisha:
+Our engineers spend quite a bit of time going through Jira tickets, reading
+the comments, looking at related tickets, and figuring out exactly what the
+requirement means.
+
+Vikram:
+Sometimes I'll spend 30 minutes just understanding the context of a ticket
+before I can estimate it.
+
+Priya:
+What happens when the ticket isn't clear?
+
+Vikram:
+Usually I look through previous tickets or Slack conversations. If I still
+can't figure it out, I schedule time with the product manager.
+
+Aisha:
+The problem is that this creates delays. Product thinks the requirement is
+ready, but engineering discovers missing information during refinement.
+
+Robert:
+It's especially difficult for new engineers because they don't know the
+history behind some of these systems.
+
+Priya:
+How often would you say engineers encounter this?
+
+Aisha:
+Pretty much every planning cycle. Some tickets are clear, but a meaningful
+percentage need additional clarification.
+
+Vikram:
+I'd love something that could look at the ticket, related Jira issues, and
+our existing documentation and summarize the context before I start working
+on it.
+
+Robert:
+I'd also want it to identify missing information rather than just summarize
+what's already there.
+
+Aisha:
+Exactly. If the system could say, "The acceptance criteria don't specify
+what should happen in this scenario," that would be useful.
+
+Priya:
+Would AI-generated ticket analysis be something you'd pilot?
+
+Robert:
+Yes, provided engineers can verify the sources and it doesn't become another
+system they have to maintain.
+
+Vikram:
+If it saves even 15 or 20 minutes per ticket, that would add up quickly.
+
+Priya:
+What would you measure?
+
+Aisha:
+Time spent in refinement, number of clarification cycles, and how often
+tickets are returned to product for missing information.
+
+Robert:
+If those improve, I'd be interested in expanding it across engineering.
+

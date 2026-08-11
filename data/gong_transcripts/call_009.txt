@@ -1,0 +1,92 @@
+Customer: Acme Technologies
+Meeting: Developer Environment & Tooling Review
+Date: 2026-08-06
+
+Participants:
+- Jonathan Reed, Director of Developer Experience
+- Meera Kapoor, Engineering Manager
+- Omar Hassan, Senior Software Engineer
+- Priya Shah, Customer Success Manager
+
+Priya:
+I'd like to understand some of the recurring friction developers experience
+before they can actually start working on a task.
+
+Jonathan:
+Developer environment setup is one area we've been trying to improve. New
+developers and even existing developers sometimes spend a surprising amount
+of time getting their local environment working.
+
+Meera:
+Every team has slightly different setup requirements. Someone might spend
+half a day installing dependencies, configuring services, getting credentials,
+and figuring out why something isn't working locally.
+
+Omar:
+And when something breaks, the error messages aren't always helpful. I
+usually search Slack, GitHub issues, and old documentation to figure out what
+someone else did.
+
+Priya:
+How often does this happen?
+
+Omar:
+For new developers, almost every time. For existing developers, probably a
+few times a month when they move between services.
+
+Jonathan:
+We've created setup documentation, but it gets outdated as dependencies
+change.
+
+Meera:
+The other problem is that developers often don't know whether the issue is
+with their machine, the dependency, or the service configuration.
+
+Priya:
+Have you tried using AI to help troubleshoot these issues?
+
+Omar:
+I've used general AI tools to explain error messages. That's useful, but the
+answers aren't always specific to our environment.
+
+Jonathan:
+I'd be interested in something that understands our internal setup
+documentation and common environment issues.
+
+Meera:
+It could also guide developers through the setup step by step and identify
+where their configuration differs from the expected environment.
+
+Omar:
+I'd want it to show the documentation or previous issue that supports its
+recommendation.
+
+Priya:
+Would this be something you would pilot?
+
+Jonathan:
+Yes. I'd start with new developers because that's where we have the most
+obvious time cost.
+
+Meera:
+We could measure time from account creation to a developer successfully
+running their first service locally.
+
+Omar:
+And for existing developers, we could track how quickly recurring setup
+issues get resolved.
+
+Priya:
+Would there be any concerns?
+
+Jonathan:
+We'd need to be careful with credentials and secrets. The AI should never
+have access to sensitive credentials.
+
+Priya:
+Understood. We could keep the initial pilot focused on documentation and
+troubleshooting guidance rather than automated environment changes.
+
+Jonathan:
+That would be a reasonable starting point.
+

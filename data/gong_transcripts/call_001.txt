@@ -1,0 +1,75 @@
+Customer: Acme Technologies
+Meeting: Engineering Adoption Review
+Date: 2026-07-10
+
+Participants:
+- Sarah Chen, VP Engineering
+- Mark Davis, Engineering Manager, Payments
+- Alex Kumar, Senior Software Developer
+- Priya Shah, Customer Success Manager
+
+Sarah:
+Overall, the team is positive about the AI tool. The developers are using it
+for basic code completion and some boilerplate work. But I don't think we've
+changed the way the engineering organization works yet.
+
+Priya:
+What are some of the workflows where you think the team is still spending
+significant manual effort?
+
+Mark:
+Testing is probably the biggest one for my team. Developers still spend a
+lot of time writing and updating tests manually, especially when we make
+changes to older services.
+
+Alex:
+Yeah. For some of the payments services, I'll finish a feature and then
+spend another couple of hours writing the unit and regression tests.
+
+Priya:
+How often would you say that happens?
+
+Alex:
+Pretty much every sprint. Sometimes more if we're dealing with a production
+bug or a larger release.
+
+Mark:
+And it's not just writing the tests. When something changes in the codebase,
+we have to figure out which existing tests are still relevant and add new
+ones. A lot of that work is repetitive.
+
+Sarah:
+How much time do you think the team spends on this overall?
+
+Mark:
+I'd estimate two to three hours per developer per sprint, although the
+senior engineers probably spend less time writing the tests themselves and
+more time reviewing what the junior developers create.
+
+Sarah:
+If AI could reduce some of that effort without compromising quality, that
+would be interesting. But I would want to see evidence before we roll
+anything out broadly.
+
+Alex:
+My concern is that generated tests can look correct but still miss important
+edge cases. I'd want developers to review everything before it gets merged.
+
+Priya:
+So it sounds like the opportunity is there, but we'd need to keep engineers
+in the loop and prove that the output is reliable.
+
+Mark:
+Exactly. I wouldn't want this to become a situation where people blindly
+accept whatever the AI generates.
+
+Sarah:
+If we could run a small pilot with one team and measure time saved, quality,
+and whether developers actually use it, I'd be open to expanding it.
+
+Priya:
+That makes sense. We could start with the payments team and identify a few
+developers who are already using the AI tool regularly.
+
+Sarah:
+Yes. Let's prove it with a small group first.

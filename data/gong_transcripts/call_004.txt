@@ -1,0 +1,85 @@
+Customer: Acme Technologies
+Meeting: Production Engineering Discussion
+Date: 2026-07-22
+
+Participants:
+- Lisa Morgan, Director of Engineering
+- Arjun Nair, Engineering Manager, Platform
+- Kevin Zhang, Senior Site Reliability Engineer
+- Priya Shah, Customer Success Manager
+
+Priya:
+I'd like to understand some of the areas where the engineering team spends
+significant time outside of normal feature development.
+
+Lisa:
+Production incidents are probably one of the biggest ones. When something
+breaks, engineers spend a lot of time trying to understand what happened
+before they can actually fix it.
+
+Kevin:
+A lot of the investigation is manual. We look through logs, dashboards,
+recent deployments, Jira tickets, and previous incident reports.
+
+Arjun:
+The difficult part is that the information is spread across several systems.
+An engineer might spend 30 or 40 minutes just gathering context before they
+start troubleshooting.
+
+Priya:
+Does this happen frequently?
+
+Kevin:
+We have several incidents every week across our services. Most aren't major,
+but even smaller incidents consume engineering time.
+
+Lisa:
+The bigger problem is when the person investigating hasn't seen the service
+before. They need to understand the architecture and then figure out what
+changed.
+
+Kevin:
+We have runbooks, but they're not always followed because engineers don't
+always know which runbook applies to the incident.
+
+Priya:
+Have you considered using AI to help with incident investigation?
+
+Kevin:
+Yes, but we'd have to be careful. I wouldn't want an AI system automatically
+changing production systems.
+
+Lisa:
+Agreed. I'm interested in something that can gather information and help
+engineers investigate, but humans need to remain responsible for the final
+decision.
+
+Arjun:
+If it could look at the alert, recent deployments, relevant logs, similar
+past incidents, and the applicable runbook, that would save a lot of time.
+
+Kevin:
+It would also be useful if it could identify similar incidents we've had
+before. We have years of incident history but engineers don't always know
+where to look.
+
+Priya:
+What would you measure in a pilot?
+
+Kevin:
+Time from alert to initial diagnosis would be a good metric.
+
+Arjun:
+Also how often the AI recommendations are useful and how often engineers
+have to discard them.
+
+Lisa:
+If we can reduce investigation time without increasing operational risk,
+I'd support expanding it to more teams.
+
+Priya:
+So a pilot could focus on investigation and information gathering, with any
+production changes remaining under human approval.
+
+Lisa:
+Yes. That would be the right approach.

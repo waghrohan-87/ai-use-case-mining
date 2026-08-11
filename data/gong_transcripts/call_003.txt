@@ -1,0 +1,77 @@
+Customer: Acme Technologies
+Meeting: Engineering Workflow Review
+Date: 2026-07-18
+
+Participants:
+- James Wilson, VP Platform Engineering
+- Ananya Patel, Engineering Manager
+- Rahul Mehta, Senior Developer
+- Priya Shah, Customer Success Manager
+
+Priya:
+I'd like to understand which parts of the development lifecycle still create
+the most repetitive work for the team.
+
+James:
+Code reviews are probably one of the bigger time sinks. We have a lot of
+pull requests where the changes are relatively straightforward, but our
+senior engineers still need to spend time reviewing them.
+
+Rahul:
+Yes. Some PRs are easy, but we also get a lot of repetitive changes where
+I'm basically checking the same things over and over.
+
+Ananya:
+The problem is that our senior developers are becoming a bottleneck. They
+need to review the important architectural changes, but they also spend a
+lot of time on routine reviews.
+
+Priya:
+What does the current review process look like?
+
+Rahul:
+Everything goes through GitHub. Usually one or two senior developers review
+the PR, leave comments, and the developer makes changes. Then it goes back
+for another review.
+
+James:
+For larger changes that's fine. The issue is the volume of smaller PRs.
+
+Ananya:
+We have also tried automated linting and static analysis, but those tools
+don't really understand the context of the change.
+
+Priya:
+Would the team be open to AI-assisted code review?
+
+Rahul:
+Potentially. I think it could help identify obvious issues before the PR
+gets to a senior engineer.
+
+James:
+But I wouldn't want it making the final decision. It should be an assistant,
+not a replacement for engineering review.
+
+Ananya:
+I'd also want it to explain why it flagged something. If it just says
+"this is wrong" without context, developers will ignore it.
+
+Priya:
+What would make you comfortable piloting it?
+
+James:
+If it could run automatically on pull requests, identify potential issues,
+suggest improvements, and let the developer or reviewer decide whether the
+recommendation is valid, I'd be interested.
+
+Rahul:
+I'd also want to measure whether it actually reduces review time rather than
+just creating more comments for developers to read.
+
+Priya:
+So we'd need to measure review time, acceptance of AI suggestions, and
+whether senior engineers are spending less time on routine reviews.
+
+James:
+Exactly. If those numbers look good, we'd have a strong case for expanding it.
+

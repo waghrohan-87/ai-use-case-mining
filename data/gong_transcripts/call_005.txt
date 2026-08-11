@@ -1,0 +1,80 @@
+Customer: Acme Technologies
+Meeting: Developer Knowledge & Documentation Review
+Date: 2026-07-25
+
+Participants:
+- Maria Rodriguez, VP Engineering
+- Daniel Kim, Engineering Manager
+- Sneha Iyer, Staff Engineer
+- Priya Shah, Customer Success Manager
+
+Priya:
+I'd like to understand some of the less visible productivity issues that the
+engineering teams are dealing with.
+
+Maria:
+Documentation is a big one. We have a lot of engineering documentation, but
+keeping it current is difficult.
+
+Daniel:
+A developer can look at a Confluence page and then discover that the actual
+implementation in GitHub is completely different.
+
+Sneha:
+That's happened to me several times. I'll follow documentation to understand
+a service and then realize the documentation describes an older version.
+
+Priya:
+How do developers deal with that today?
+
+Sneha:
+Usually we search Confluence, GitHub, Jira, and Slack. If we still can't find
+the answer, we ask someone on the team.
+
+Daniel:
+And that's a problem because the person who knows the answer might be on
+another team or on leave.
+
+Maria:
+We have talked about improving our documentation process, but keeping
+everything synchronized manually hasn't worked very well.
+
+Priya:
+Do you think AI could help?
+
+Sneha:
+Potentially. I'd be interested in something that could look at the code and
+existing documentation and identify where they don't match.
+
+Daniel:
+It could also help generate documentation when a developer changes an API
+or introduces a new service.
+
+Maria:
+But I don't want automatically generated documentation going live without
+someone reviewing it.
+
+Sneha:
+Agreed. The AI should propose changes, not publish them automatically.
+
+Priya:
+What would make this valuable enough to deploy?
+
+Maria:
+If we could reduce the amount of outdated documentation and make it easier
+for developers to find accurate information, that would be valuable.
+
+Daniel:
+I'd measure how often developers find the right information on the first
+attempt and how much time they spend searching.
+
+Sneha:
+Another useful metric would be how quickly documentation gets updated after
+a significant code change.
+
+Priya:
+Would you be open to a pilot?
+
+Maria:
+Yes. Start with one service where we know documentation is particularly
+problematic, measure the baseline, and see if AI can improve it.

@@ -1,0 +1,98 @@
+Customer: Acme Technologies
+Meeting: AI Adoption Security Review
+Date: 2026-08-08
+
+Participants:
+- Karen Brooks, VP Engineering
+- Faisal Ahmed, Head of Security Engineering
+- Laura Chen, Engineering Manager
+- Priya Shah, Customer Success Manager
+
+Priya:
+I'd like to understand what might prevent us from expanding the AI rollout
+across more engineering teams.
+
+Karen:
+The biggest question is security. Engineering is interested in expanding
+usage, but Security needs to be comfortable with how the AI tool handles
+source code and company information.
+
+Faisal:
+Our primary concern is data exposure. Developers work with proprietary
+code, credentials, internal APIs, and customer-related information.
+
+Laura:
+From the engineering side, the team wants clear guidance on what they can
+and cannot put into the AI tool.
+
+Faisal:
+Exactly. We've received several questions about whether developers can use
+AI with production code, internal documentation, or data from customer
+systems.
+
+Priya:
+Is there currently a formal policy?
+
+Faisal:
+We have a general AI policy, but it doesn't cover every engineering
+scenario. Developers are interpreting it differently.
+
+Karen:
+That inconsistency is slowing adoption. Some teams are using the AI tool
+regularly, while others are avoiding it because they're unsure what's
+allowed.
+
+Laura:
+I've had developers ask me whether they can use AI to analyze certain
+internal repositories. I don't always know what the approved answer is.
+
+Priya:
+What would help?
+
+Faisal:
+A clear set of engineering-specific guidelines would help. We need to
+define approved use cases, prohibited data, and what developers should do
+when they're unsure.
+
+Karen:
+I'd also like to see some form of training. Telling developers to follow a
+policy isn't enough if they don't understand why the controls exist.
+
+Laura:
+If we had clear examples, developers would probably be more comfortable
+using the tool.
+
+Priya:
+Would an AI assistant that answered questions about the company's AI policy
+be useful?
+
+Faisal:
+Potentially, as long as the answers are grounded in the approved security
+documentation and the assistant doesn't make up policies.
+
+Karen:
+But I would treat that as an enablement tool, not a replacement for the
+Security team.
+
+Priya:
+What would success look like?
+
+Faisal:
+Fewer policy-related questions coming directly to Security and fewer cases
+where developers use the tool in ways that violate our guidelines.
+
+Laura:
+From engineering's perspective, success would also mean fewer teams
+blocking adoption because they aren't sure what's allowed.
+
+Karen:
+If Security can establish clear guardrails, I'd be comfortable expanding
+the rollout.
+
+Priya:
+So the immediate priority is establishing the guardrails and enabling
+developers, rather than increasing usage without controls.
+
+Faisal:
+Correct. Adoption without appropriate controls isn't success.
+

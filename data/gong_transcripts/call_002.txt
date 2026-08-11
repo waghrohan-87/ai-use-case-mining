@@ -1,0 +1,74 @@
+Customer: Acme Technologies
+Meeting: Developer Productivity Discussion
+Date: 2026-07-14
+
+Participants:
+- David Lee, Director of Engineering
+- Neha Rao, Staff Software Engineer
+- Michael Wong, Engineering Manager
+- Priya Shah, Customer Success Manager
+
+Priya:
+I'd like to understand where the team is still losing time in the development
+workflow.
+
+David:
+One thing that comes up repeatedly is legacy code. We have services that were
+written years ago and not everyone understands how they work anymore.
+
+Neha:
+That's definitely a problem. When I get assigned an issue in one of the older
+Java services, I can spend an hour or more just figuring out what the code is
+doing before I can make a change.
+
+Michael:
+And it's not limited to new developers. Even experienced engineers sometimes
+have to trace through several services before they understand the dependency
+chain.
+
+Priya:
+What do you typically do today when someone needs to understand one of these
+services?
+
+Neha:
+Mostly search through the repository, look at old documentation, check Jira
+tickets, and ask someone who has worked on it before.
+
+David:
+The documentation isn't always reliable either. Some of it hasn't been updated
+in years.
+
+Michael:
+We also have information spread across GitHub, Confluence, Jira, and internal
+documents. Finding the right information is probably half the problem.
+
+Priya:
+How frequently does this happen?
+
+Neha:
+Almost every time someone works on one of the older services. Maybe several
+times a week across the team.
+
+David:
+I'd be interested in using AI here, but I don't want it confidently explaining
+something incorrectly. If we use it, the answers need to be grounded in our
+actual code and documentation.
+
+Neha:
+Exactly. If it could point me to the relevant code, documentation, and Jira
+history while explaining how a service works, that would save me a lot of time.
+
+Michael:
+I'd also want to know where the answer came from. Engineers won't trust a
+black-box answer.
+
+Priya:
+Would you be willing to pilot something with a small engineering group?
+
+David:
+Yes. If we can connect it to our internal documentation and repositories and
+show that engineers are actually spending less time understanding existing
+code, I'd support a pilot.
+
+Neha:
+I'd be happy to test it. The source references would be important for me.

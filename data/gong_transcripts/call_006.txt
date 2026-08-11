@@ -1,0 +1,88 @@
+Customer: Acme Technologies
+Meeting: Engineering Release Process Review
+Date: 2026-07-29
+
+Participants:
+- Tom Anderson, Director of Engineering
+- Kavya Menon, Engineering Manager
+- Chris Evans, Senior Developer
+- Priya Shah, Customer Success Manager
+
+Priya:
+Can you walk me through some of the manual work involved in your release
+process today?
+
+Tom:
+Release preparation takes more time than it should. The engineering teams
+have to gather information from Jira and GitHub and then prepare release
+notes for stakeholders.
+
+Kavya:
+Every sprint we have developers and engineering managers going through
+tickets and pull requests to figure out what actually changed.
+
+Chris:
+A lot of the information is already there. We're just manually turning it
+into something that product and business teams can understand.
+
+Priya:
+How much time does that typically take?
+
+Kavya:
+For a larger release, probably several hours across the team. Smaller
+releases aren't as bad, but we're doing them frequently.
+
+Tom:
+The other issue is consistency. Different teams write release notes in
+different formats.
+
+Chris:
+Sometimes I end up copying information from five or six Jira tickets into
+a document and then rewriting it so it makes sense.
+
+Priya:
+Have you tried using AI for this?
+
+Chris:
+I've experimented with it personally. It can produce a decent first draft,
+but you have to give it the right context.
+
+Kavya:
+That's the challenge. If the AI only sees a ticket title, it won't know
+what actually changed.
+
+Tom:
+If we could connect it to Jira and GitHub and have it generate a draft based
+on the actual changes, that would be useful.
+
+Priya:
+Would you want it to publish the release notes automatically?
+
+Tom:
+No. Someone from engineering should review them first.
+
+Kavya:
+I'd also want the output to follow our existing format.
+
+Chris:
+And it would be useful if it could identify changes that are important for
+customers versus internal technical changes.
+
+Priya:
+What would success look like?
+
+Kavya:
+Reduce the time spent preparing release notes and improve consistency
+between teams.
+
+Tom:
+If we can get the first draft down from a few hours to maybe 20 minutes of
+review, I'd consider that a success.
+
+Priya:
+Would this be suitable for a pilot?
+
+Tom:
+Yes. Start with one product team and compare preparation time against our
+current process.
+
