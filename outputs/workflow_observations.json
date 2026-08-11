@@ -1,0 +1,530 @@
+[
+  {
+    "source_file": "call_001.txt",
+    "customer": "Acme Technologies",
+    "workflows": [
+      {
+        "workflow": "Writing unit and regression tests for payment services",
+        "team": "Engineering - Payments",
+        "persona": "Software Developer",
+        "pain_point": "Developers spend significant manual time writing tests after completing features, particularly for older services",
+        "current_process": "After finishing a feature, developers manually write unit and regression tests, which takes additional time beyond the feature development itself",
+        "frequency": "Every sprint, sometimes more frequently for production bugs or larger releases",
+        "estimated_effort_hours": 2,
+        "ai_suitability": "Medium",
+        "evidence": "Alex: 'For some of the payments services, I'll finish a feature and then spend another couple of hours writing the unit and regression tests.' and 'Pretty much every sprint. Sometimes more if we're dealing with a production bug or a larger release.'",
+        "confidence": 0.9
+      },
+      {
+        "workflow": "Updating and maintaining existing test suites when codebase changes",
+        "team": "Engineering - Payments",
+        "persona": "Software Developer",
+        "pain_point": "When codebase changes, developers must determine which existing tests remain relevant and create new ones; much of this work is repetitive",
+        "current_process": "Developers manually review existing tests for relevance after code changes and add new tests as needed",
+        "frequency": "Ongoing as part of regular development cycles",
+        "estimated_effort_hours": null,
+        "ai_suitability": "Medium",
+        "evidence": "Mark: 'When something changes in the codebase, we have to figure out which existing tests are still relevant and add new ones. A lot of that work is repetitive.'",
+        "confidence": 0.85
+      },
+      {
+        "workflow": "Code review of tests created by junior developers",
+        "team": "Engineering - Payments",
+        "persona": "Senior Software Engineer",
+        "pain_point": "Senior engineers spend time reviewing tests created by junior developers rather than writing tests themselves",
+        "current_process": "Senior engineers review test code written by junior developers",
+        "frequency": "Regular, tied to sprint cycles",
+        "estimated_effort_hours": null,
+        "ai_suitability": "Unknown",
+        "evidence": "Mark: 'the senior engineers probably spend less time writing the tests themselves and more time reviewing what the junior developers create.'",
+        "confidence": 0.7
+      }
+    ],
+    "organizational_context": {
+      "current_ai_adoption": "Developers are using AI tools for basic code completion and boilerplate work",
+      "adoption_stage": "Early adoption - tools in use but engineering organization workflows have not fundamentally changed",
+      "decision_maker_priority": "Reducing manual testing effort without compromising quality, with evidence-based validation before broad rollout",
+      "pilot_readiness": "Ready for small pilot with payments team using developers already familiar with AI tools",
+      "key_concerns": [
+        "AI-generated tests may look correct but miss important edge cases",
+        "Risk of developers blindly accepting AI output without proper review",
+        "Need to maintain quality standards while reducing effort",
+        "Requirement to keep engineers in the loop for validation",
+        "Need to measure time saved, quality impact, and actual usage before expansion"
+      ]
+    }
+  },
+  {
+    "source_file": "call_002.txt",
+    "customer": "Acme Technologies",
+    "workflows": [
+      {
+        "workflow": "Understanding legacy code and service dependencies",
+        "team": "Engineering",
+        "persona": "Software Engineer",
+        "pain_point": "Engineers spend significant time (over an hour) understanding legacy code before making changes due to outdated documentation and information scattered across multiple systems",
+        "current_process": "Search through repository, review old documentation, check Jira tickets, and ask colleagues who previously worked on the code",
+        "frequency": "Several times per week across the team",
+        "estimated_effort_hours": 1,
+        "ai_suitability": "High",
+        "evidence": "Neha: 'When I get assigned an issue in one of the older Java services, I can spend an hour or more just figuring out what the code is doing before I can make a change.' and 'Almost every time someone works on one of the older services. Maybe several times a week across the team.'",
+        "confidence": 0.95
+      },
+      {
+        "workflow": "Finding information across distributed documentation systems",
+        "team": "Engineering",
+        "persona": "Software Engineer",
+        "pain_point": "Information is scattered across multiple platforms (GitHub, Confluence, Jira, internal documents) making it difficult to locate relevant information",
+        "current_process": "Manual search across GitHub, Confluence, Jira, and internal documents",
+        "frequency": "Several times per week",
+        "estimated_effort_hours": null,
+        "ai_suitability": "High",
+        "evidence": "Michael: 'We also have information spread across GitHub, Confluence, Jira, and internal documents. Finding the right information is probably half the problem.'",
+        "confidence": 0.85
+      },
+      {
+        "workflow": "Tracing service dependency chains",
+        "team": "Engineering",
+        "persona": "Software Engineer (including experienced engineers)",
+        "pain_point": "Engineers must manually trace through multiple services to understand dependency relationships",
+        "current_process": "Manual code tracing across multiple services",
+        "frequency": null,
+        "estimated_effort_hours": null,
+        "ai_suitability": "Medium",
+        "evidence": "Michael: 'Even experienced engineers sometimes have to trace through several services before they understand the dependency chain.'",
+        "confidence": 0.75
+      }
+    ],
+    "organizational_context": {
+      "current_ai_adoption": "Interested but not currently using AI for this use case",
+      "adoption_stage": "Exploration/Pre-pilot",
+      "decision_maker_priority": "Reducing time spent understanding existing code and improving developer productivity",
+      "pilot_readiness": "Ready - willing to pilot with small engineering group",
+      "key_concerns": [
+        "Accuracy and reliability of AI-generated explanations",
+        "Answers must be grounded in actual code and documentation",
+        "Transparency and source attribution (engineers need to know where answers come from)",
+        "Trust and verifiability of AI outputs"
+      ]
+    }
+  },
+  {
+    "source_file": "call_003.txt",
+    "customer": "Acme Technologies",
+    "workflows": [
+      {
+        "workflow": "Code review process for pull requests",
+        "team": "Platform Engineering",
+        "persona": "Senior Developer",
+        "pain_point": "Senior developers spending significant time reviewing routine and straightforward pull requests, creating a bottleneck",
+        "current_process": "All PRs go through GitHub where one or two senior developers review, leave comments, developer makes changes, then another review cycle occurs. Automated linting and static analysis tools are used but don't understand context of changes",
+        "frequency": "High volume of smaller PRs mentioned",
+        "estimated_effort_hours": null,
+        "ai_suitability": "High",
+        "evidence": "James: 'Code reviews are probably one of the bigger time sinks.' Rahul: 'Some PRs are easy, but we also get a lot of repetitive changes where I'm basically checking the same things over and over.' Ananya: 'The problem is that our senior developers are becoming a bottleneck.'",
+        "confidence": 0.95
+      }
+    ],
+    "organizational_context": {
+      "current_ai_adoption": "No AI tools currently in use for code review",
+      "adoption_stage": "Exploration/Interest",
+      "decision_maker_priority": "Reduce senior engineer bottleneck on routine code reviews while maintaining quality and human oversight",
+      "pilot_readiness": "Ready to pilot with specific conditions",
+      "key_concerns": [
+        "AI should assist, not replace human engineering review",
+        "AI recommendations must include explanatory context",
+        "Need to measure actual impact on review time and senior engineer workload",
+        "Must track acceptance rate of AI suggestions to ensure value",
+        "Risk of AI creating additional noise rather than reducing workload"
+      ]
+    }
+  },
+  {
+    "source_file": "call_004.txt",
+    "customer": "Acme Technologies",
+    "workflows": [
+      {
+        "workflow": "Production incident investigation and context gathering",
+        "team": "Platform Engineering",
+        "persona": "Site Reliability Engineer / Engineering Manager",
+        "pain_point": "Engineers spend 30-40 minutes manually gathering context from multiple systems (logs, dashboards, deployments, Jira tickets, previous incident reports) before they can begin actual troubleshooting",
+        "current_process": "Manual investigation across multiple systems including logs, dashboards, recent deployments, Jira tickets, and previous incident reports to gather context before troubleshooting",
+        "frequency": "Several incidents per week across services",
+        "estimated_effort_hours": null,
+        "ai_suitability": "High",
+        "evidence": "Arjun stated 'An engineer might spend 30 or 40 minutes just gathering context before they start troubleshooting' and Kevin described 'We look through logs, dashboards, recent deployments, Jira tickets, and previous incident reports.' Kevin also confirmed 'We have several incidents every week across our services.'",
+        "confidence": 0.95
+      },
+      {
+        "workflow": "Identifying relevant runbooks during incidents",
+        "team": "Platform Engineering",
+        "persona": "Site Reliability Engineer",
+        "pain_point": "Runbooks exist but are not always followed because engineers don't always know which runbook applies to the incident",
+        "current_process": "Engineers must manually determine which runbook is relevant to the current incident",
+        "frequency": "Several incidents per week",
+        "estimated_effort_hours": null,
+        "ai_suitability": "Medium",
+        "evidence": "Kevin stated 'We have runbooks, but they're not always followed because engineers don't always know which runbook applies to the incident.'",
+        "confidence": 0.85
+      },
+      {
+        "workflow": "Finding similar historical incidents",
+        "team": "Platform Engineering",
+        "persona": "Site Reliability Engineer",
+        "pain_point": "Engineers have years of incident history available but don't always know where to look to find similar past incidents",
+        "current_process": "Manual search through historical incident records",
+        "frequency": "During incident investigation (several times per week)",
+        "estimated_effort_hours": null,
+        "ai_suitability": "High",
+        "evidence": "Kevin stated 'It would also be useful if it could identify similar incidents we've had before. We have years of incident history but engineers don't always know where to look.'",
+        "confidence": 0.9
+      },
+      {
+        "workflow": "Understanding unfamiliar service architecture during incidents",
+        "team": "Platform Engineering",
+        "persona": "Engineer (unfamiliar with the service)",
+        "pain_point": "When an engineer investigates an incident for a service they haven't worked on before, they need to understand the architecture and recent changes before troubleshooting",
+        "current_process": "Manual review of architecture documentation and change history",
+        "frequency": null,
+        "estimated_effort_hours": null,
+        "ai_suitability": "Medium",
+        "evidence": "Lisa stated 'The bigger problem is when the person investigating hasn't seen the service before. They need to understand the architecture and then figure out what changed.'",
+        "confidence": 0.8
+      }
+    ],
+    "organizational_context": {
+      "current_ai_adoption": "Considering AI but not yet implemented for incident investigation",
+      "adoption_stage": "Exploration/Pre-pilot",
+      "decision_maker_priority": "Reduce investigation time without increasing operational risk",
+      "pilot_readiness": "Ready for pilot focused on investigation and information gathering with human approval for production changes",
+      "key_concerns": [
+        "AI must not automatically change production systems",
+        "Humans need to remain responsible for final decisions",
+        "Need to measure usefulness of AI recommendations",
+        "Need to track how often engineers discard AI suggestions",
+        "Operational risk must not increase"
+      ]
+    }
+  },
+  {
+    "source_file": "call_005.txt",
+    "customer": "Acme Technologies",
+    "workflows": [
+      {
+        "workflow": "Finding accurate technical documentation across multiple systems",
+        "team": "Engineering",
+        "persona": "Developer/Engineer",
+        "pain_point": "Documentation is outdated and doesn't match actual implementation in code, requiring developers to search multiple systems and ask colleagues",
+        "current_process": "Search Confluence, GitHub, Jira, and Slack for information; if answer not found, ask team members who may be unavailable",
+        "frequency": null,
+        "estimated_effort_hours": null,
+        "ai_suitability": "High",
+        "evidence": "Sneha: 'Usually we search Confluence, GitHub, Jira, and Slack. If we still can't find the answer, we ask someone on the team.' Daniel: 'And that's a problem because the person who knows the answer might be on another team or on leave.'",
+        "confidence": 0.95
+      },
+      {
+        "workflow": "Keeping technical documentation synchronized with code changes",
+        "team": "Engineering",
+        "persona": "Developer/Engineer",
+        "pain_point": "Documentation becomes outdated when code changes, and manual synchronization efforts have not been effective",
+        "current_process": "Manual documentation updates attempted but not working well; documentation often describes older versions of implementations",
+        "frequency": null,
+        "estimated_effort_hours": null,
+        "ai_suitability": "High",
+        "evidence": "Maria: 'We have talked about improving our documentation process, but keeping everything synchronized manually hasn't worked very well.' Sneha: 'I'll follow documentation to understand a service and then realize the documentation describes an older version.'",
+        "confidence": 0.9
+      },
+      {
+        "workflow": "Identifying discrepancies between code and documentation",
+        "team": "Engineering",
+        "persona": "Developer/Engineer",
+        "pain_point": "Developers discover documentation-code mismatches only when trying to use the documentation, wasting time and creating confusion",
+        "current_process": "No proactive process; discrepancies discovered reactively when developers attempt to use documentation",
+        "frequency": null,
+        "estimated_effort_hours": null,
+        "ai_suitability": "High",
+        "evidence": "Daniel: 'A developer can look at a Confluence page and then discover that the actual implementation in GitHub is completely different.' Sneha: 'I'd be interested in something that could look at the code and existing documentation and identify where they don't match.'",
+        "confidence": 0.85
+      },
+      {
+        "workflow": "Generating documentation for API changes and new services",
+        "team": "Engineering",
+        "persona": "Developer/Engineer",
+        "pain_point": "Documentation creation when developers change APIs or introduce new services is not happening consistently",
+        "current_process": null,
+        "frequency": null,
+        "estimated_effort_hours": null,
+        "ai_suitability": "Medium",
+        "evidence": "Daniel: 'It could also help generate documentation when a developer changes an API or introduces a new service.' Maria: 'But I don't want automatically generated documentation going live without someone reviewing it.' Sneha: 'Agreed. The AI should propose changes, not publish them automatically.'",
+        "confidence": 0.75
+      }
+    ],
+    "organizational_context": {
+      "current_ai_adoption": null,
+      "adoption_stage": "Exploration",
+      "decision_maker_priority": "Reduce outdated documentation and improve developer ability to find accurate information quickly",
+      "pilot_readiness": "High - explicit willingness to pilot with one service with known documentation problems",
+      "key_concerns": [
+        "AI-generated documentation must be reviewed by humans before publishing",
+        "Need to measure baseline and improvement metrics",
+        "Quality control over automatically generated content"
+      ]
+    }
+  },
+  {
+    "source_file": "call_006.txt",
+    "customer": "Acme Technologies",
+    "workflows": [
+      {
+        "workflow": "Release notes preparation",
+        "team": "Engineering",
+        "persona": "Developers and Engineering Managers",
+        "pain_point": "Manual gathering and reformatting of information from Jira tickets and GitHub pull requests into stakeholder-friendly release notes is time-consuming and inconsistent across teams",
+        "current_process": "Developers and engineering managers manually review Jira tickets and GitHub pull requests each sprint, copy information from multiple tickets, and rewrite it into release notes that product and business teams can understand",
+        "frequency": "Every sprint (smaller releases frequent, larger releases periodic)",
+        "estimated_effort_hours": null,
+        "ai_suitability": "High",
+        "evidence": "Chris: 'Sometimes I end up copying information from five or six Jira tickets into a document and then rewriting it so it makes sense.' Tom: 'Release preparation takes more time than it should. The engineering teams have to gather information from Jira and GitHub and then prepare release notes for stakeholders.' Kavya: 'For a larger release, probably several hours across the team.'",
+        "confidence": 0.95
+      }
+    ],
+    "organizational_context": {
+      "current_ai_adoption": "Individual experimentation only",
+      "adoption_stage": "Exploration",
+      "decision_maker_priority": "Reduce time spent preparing release notes and improve consistency between teams",
+      "pilot_readiness": "Ready - Director suggested starting with one product team and measuring preparation time against current process",
+      "key_concerns": [
+        "AI needs right context from Jira and GitHub to be effective",
+        "Requires human review before publishing",
+        "Must follow existing format standards",
+        "Should distinguish customer-facing changes from internal technical changes"
+      ]
+    }
+  },
+  {
+    "source_file": "call_007.txt",
+    "customer": "Acme Technologies",
+    "workflows": [
+      {
+        "workflow": "Engineering requirement refinement and ticket context analysis",
+        "team": "Engineering",
+        "persona": "Software Engineer",
+        "pain_point": "Engineers spend significant time manually reviewing Jira tickets, comments, related tickets, and Slack conversations to understand requirement context before they can estimate or start work",
+        "current_process": "Engineers read through Jira tickets and comments, search for related tickets, review Slack conversations, and if unclear, schedule meetings with product managers for clarification",
+        "frequency": "Every planning cycle, affecting a meaningful percentage of tickets",
+        "estimated_effort_hours": 0.5,
+        "ai_suitability": "High",
+        "evidence": "Vikram: 'Sometimes I'll spend 30 minutes just understanding the context of a ticket before I can estimate it.' Vikram: 'I'd love something that could look at the ticket, related Jira issues, and our existing documentation and summarize the context before I start working on it.' Vikram: 'If it saves even 15 or 20 minutes per ticket, that would add up quickly.'",
+        "confidence": 0.95
+      },
+      {
+        "workflow": "Identification of incomplete or unclear requirements",
+        "team": "Engineering",
+        "persona": "Engineering Manager",
+        "pain_point": "Product requirements often lack sufficient detail, causing delays when engineering discovers missing information during refinement rather than upfront",
+        "current_process": "Engineers discover gaps during manual ticket review, then must initiate clarification cycles with product managers",
+        "frequency": "Every planning cycle",
+        "estimated_effort_hours": null,
+        "ai_suitability": "High",
+        "evidence": "Aisha: 'The problem is that this creates delays. Product thinks the requirement is ready, but engineering discovers missing information during refinement.' Robert: 'I'd also want it to identify missing information rather than just summarize what's already there.' Aisha: 'If the system could say, \"The acceptance criteria don't specify what should happen in this scenario,\" that would be useful.'",
+        "confidence": 0.9
+      },
+      {
+        "workflow": "New engineer onboarding and system context learning",
+        "team": "Engineering",
+        "persona": "New Software Engineer",
+        "pain_point": "New engineers lack historical context about systems, making requirement understanding more difficult",
+        "current_process": "New engineers must learn system history through ticket review and asking experienced team members",
+        "frequency": null,
+        "estimated_effort_hours": null,
+        "ai_suitability": "Medium",
+        "evidence": "Robert: 'It's especially difficult for new engineers because they don't know the history behind some of these systems.'",
+        "confidence": 0.75
+      }
+    ],
+    "organizational_context": {
+      "current_ai_adoption": null,
+      "adoption_stage": "Evaluation/Pre-pilot",
+      "decision_maker_priority": "Reducing time spent in requirement refinement and minimizing clarification cycles between engineering and product",
+      "pilot_readiness": "High - leadership has expressed willingness to pilot with specific success metrics",
+      "key_concerns": [
+        "Engineers must be able to verify sources of AI-generated analysis",
+        "Solution should not require significant maintenance overhead",
+        "Need measurable improvement in time spent in refinement, number of clarification cycles, and tickets returned to product"
+      ]
+    }
+  },
+  {
+    "source_file": "call_008.txt",
+    "customer": "Acme Technologies",
+    "workflows": [
+      {
+        "workflow": "Engineering onboarding and knowledge transfer",
+        "team": "Engineering",
+        "persona": "New engineers and senior engineers providing support",
+        "pain_point": "Getting new engineers productive takes longer than desired; experienced engineers spend significant time answering onboarding questions",
+        "current_process": "New engineers learn by asking other engineers questions, reading documentation spread across Confluence, GitHub, and internal wikis, and watching recorded training sessions",
+        "frequency": "Occurs regularly with each new hire; experienced engineers spend 2-4 hours per week during first month per new hire",
+        "estimated_effort_hours": 2,
+        "ai_suitability": "High",
+        "evidence": "Daniel: 'When I joined, I spent a lot of time asking other engineers questions. Even now, when someone new joins my team, I spend several hours helping them understand the codebase.' Daniel: 'Probably two to four hours a week during the first month for each new hire.' Emily: 'We hire engineers regularly, and getting them productive takes longer than we'd like.'",
+        "confidence": 0.95
+      },
+      {
+        "workflow": "Finding answers in internal documentation",
+        "team": "Engineering",
+        "persona": "New engineers",
+        "pain_point": "Documentation is spread across multiple platforms and doesn't always explain how everything fits together; finding specific answers takes much longer than asking an experienced engineer",
+        "current_process": "Searching across Confluence, GitHub, and internal wikis; documentation exists but is fragmented",
+        "frequency": "Ongoing during onboarding period",
+        "estimated_effort_hours": null,
+        "ai_suitability": "High",
+        "evidence": "Sameer: 'There is documentation, but it's spread across Confluence, GitHub, and internal wikis. Some of it is useful, but it doesn't always explain how everything fits together.' Daniel: 'A new engineer might ask me, \"How does the payments service communicate with the customer service?\" I can explain it, but finding that answer in our documentation can take much longer.'",
+        "confidence": 0.9
+      },
+      {
+        "workflow": "Identifying relevant training materials",
+        "team": "Engineering",
+        "persona": "New engineers",
+        "pain_point": "Recorded training sessions exist but people don't always know which ones are relevant to their role",
+        "current_process": "Recorded training sessions are available but discovery is unclear",
+        "frequency": "During onboarding",
+        "estimated_effort_hours": null,
+        "ai_suitability": "Medium",
+        "evidence": "Emily: 'We also have recorded training sessions, but people don't always know which ones are relevant to their role.'",
+        "confidence": 0.75
+      }
+    ],
+    "organizational_context": {
+      "current_ai_adoption": null,
+      "adoption_stage": "Exploring - interested in piloting AI solutions",
+      "decision_maker_priority": "Reducing time to productivity for new engineers and reducing mentoring burden on experienced engineers",
+      "pilot_readiness": "High - willing to start with small group and has clear success metrics",
+      "key_concerns": [
+        "AI answers must include source references for trustworthiness",
+        "Solution needs to understand role-specific needs (backend vs QA engineer)",
+        "Must not make onboarding experience worse while reducing mentoring burden"
+      ]
+    }
+  },
+  {
+    "source_file": "call_009.txt",
+    "customer": "Acme Technologies",
+    "workflows": [
+      {
+        "workflow": "Developer environment setup for new developers",
+        "team": "Engineering",
+        "persona": "New Software Developer",
+        "pain_point": "New developers spend significant time installing dependencies, configuring services, getting credentials, and troubleshooting local environment issues",
+        "current_process": "Developers follow setup documentation, manually install dependencies and configure services, troubleshoot errors by searching Slack, GitHub issues, and old documentation",
+        "frequency": "Almost every time for new developers",
+        "estimated_effort_hours": 4,
+        "ai_suitability": "High",
+        "evidence": "Meera stated 'Someone might spend half a day installing dependencies, configuring services, getting credentials, and figuring out why something isn't working locally.' Omar confirmed 'For new developers, almost every time.'",
+        "confidence": 0.95
+      },
+      {
+        "workflow": "Environment troubleshooting when switching between services",
+        "team": "Engineering",
+        "persona": "Existing Software Developer",
+        "pain_point": "Existing developers encounter environment setup issues multiple times per month when moving between services, requiring time to search for solutions across multiple sources",
+        "current_process": "Search Slack, GitHub issues, and old documentation to find solutions that other developers used for similar issues",
+        "frequency": "A few times a month per developer",
+        "estimated_effort_hours": null,
+        "ai_suitability": "High",
+        "evidence": "Omar stated 'For existing developers, probably a few times a month when they move between services' and 'I usually search Slack, GitHub issues, and old documentation to figure out what someone else did.'",
+        "confidence": 0.9
+      },
+      {
+        "workflow": "Error message interpretation and troubleshooting",
+        "team": "Engineering",
+        "persona": "Software Engineer",
+        "pain_point": "Error messages aren't always helpful and developers struggle to determine if issues are with their machine, dependencies, or service configuration",
+        "current_process": "Developers use general AI tools to explain error messages, but answers aren't specific to their internal environment",
+        "frequency": null,
+        "estimated_effort_hours": null,
+        "ai_suitability": "Medium",
+        "evidence": "Omar stated 'when something breaks, the error messages aren't always helpful' and 'I've used general AI tools to explain error messages. That's useful, but the answers aren't always specific to our environment.' Meera noted 'developers often don't know whether the issue is with their machine, the dependency, or the service configuration.'",
+        "confidence": 0.85
+      },
+      {
+        "workflow": "Setup documentation maintenance",
+        "team": "Engineering",
+        "persona": "Engineering Manager / Developer Experience Team",
+        "pain_point": "Setup documentation becomes outdated as dependencies change, reducing its effectiveness",
+        "current_process": "Create and maintain setup documentation manually",
+        "frequency": null,
+        "estimated_effort_hours": null,
+        "ai_suitability": "Unknown",
+        "evidence": "Jonathan stated 'We've created setup documentation, but it gets outdated as dependencies change.'",
+        "confidence": 0.7
+      }
+    ],
+    "organizational_context": {
+      "current_ai_adoption": "Developers are using general AI tools for error message explanation on an individual basis",
+      "adoption_stage": "Early exploration - using external AI tools individually, interested in internal AI solutions",
+      "decision_maker_priority": "Reducing time spent on developer environment setup, particularly for new developers",
+      "pilot_readiness": "High - decision maker expressed interest in piloting with new developers and has identified specific success metrics",
+      "key_concerns": [
+        "Security and access to credentials and secrets - AI should never have access to sensitive credentials",
+        "Need for AI recommendations to be traceable to documentation or previous issues",
+        "Preference to start with documentation and troubleshooting guidance rather than automated environment changes"
+      ]
+    }
+  },
+  {
+    "source_file": "call_010.txt",
+    "customer": "Acme Technologies",
+    "workflows": [
+      {
+        "workflow": "Answering developer questions about AI policy compliance",
+        "team": "Security Engineering",
+        "persona": "Head of Security Engineering",
+        "pain_point": "Security team receives many policy-related questions from developers about what they can and cannot input into AI tools",
+        "current_process": "Developers ask Security team directly when they are unsure about AI policy interpretation",
+        "frequency": null,
+        "estimated_effort_hours": null,
+        "ai_suitability": "Medium",
+        "evidence": "Faisal: 'We've received several questions about whether developers can use AI with production code, internal documentation, or data from customer systems.' and 'Fewer policy-related questions coming directly to Security'",
+        "confidence": 0.85
+      },
+      {
+        "workflow": "Interpreting AI policy for engineering scenarios",
+        "team": "Engineering",
+        "persona": "Engineering Manager",
+        "pain_point": "Engineering managers don't always know the approved answer when developers ask whether they can use AI with specific internal repositories",
+        "current_process": "Developers interpret general AI policy differently, leading to inconsistent application across teams",
+        "frequency": null,
+        "estimated_effort_hours": null,
+        "ai_suitability": "Medium",
+        "evidence": "Laura: 'I've had developers ask me whether they can use AI to analyze certain internal repositories. I don't always know what the approved answer is.' and Faisal: 'We have a general AI policy, but it doesn't cover every engineering scenario. Developers are interpreting it differently.'",
+        "confidence": 0.9
+      },
+      {
+        "workflow": "Training developers on AI security controls",
+        "team": "Engineering",
+        "persona": "VP Engineering",
+        "pain_point": "Telling developers to follow policy isn't enough if they don't understand why the controls exist",
+        "current_process": "Unclear - training appears to be needed but not currently implemented",
+        "frequency": null,
+        "estimated_effort_hours": null,
+        "ai_suitability": "Medium",
+        "evidence": "Karen: 'I'd also like to see some form of training. Telling developers to follow a policy isn't enough if they don't understand why the controls exist.' and Laura: 'If we had clear examples, developers would probably be more comfortable using the tool.'",
+        "confidence": 0.8
+      }
+    ],
+    "organizational_context": {
+      "current_ai_adoption": "Partial adoption across engineering teams with some teams using AI tools regularly while others avoid them due to policy uncertainty",
+      "adoption_stage": "Early expansion phase - active AI tool usage exists but controlled expansion is blocked pending security guardrails",
+      "decision_maker_priority": "Establishing security guardrails and clear engineering-specific guidelines before expanding AI rollout",
+      "pilot_readiness": "Not ready for expansion - requires security policy clarification and developer enablement first",
+      "key_concerns": [
+        "Data exposure of proprietary code, credentials, internal APIs, and customer information",
+        "Inconsistent policy interpretation across engineering teams",
+        "Lack of engineering-specific AI usage guidelines",
+        "Developers using AI tools in ways that may violate security guidelines",
+        "Need for guardrails before expanding adoption"
+      ]
+    }
+  }
+]
