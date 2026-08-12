@@ -62,7 +62,7 @@ def main():
 
     clustering = AgglomerativeClustering(
         n_clusters=None,
-        distance_threshold=0.42,
+        distance_threshold=0.32,
         metric="precomputed",
         linkage="average"
     )

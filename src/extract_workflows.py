@@ -52,20 +52,89 @@ Also identify important organizational context:
 - key_concerns
 
 Rules:
-
 1. Separate actual workflows from general opinions.
-2. Do not assume every pain point should be solved with AI.
-3. Preserve uncertainty.
-4. If a field is unknown, use null.
-5. ai_suitability must be exactly one of:
-   "High", "Medium", "Low", or "Unknown".
-6. confidence must be a number between 0 and 1.
-7. estimated_effort_hours must be a number or null.
-8. Evidence must be directly supported by the conversation.
-9. Do not invent metrics or facts.
-10. Return ONLY valid JSON. Do not use Markdown code fences.
+
+2. Identify the underlying repeatable human activity, not the person,
+   example, tool, project, or individual incident.
+
+3. Name each workflow using a concise, reusable activity description.
+   Prefer a verb + object structure such as:
+   - Writing unit and regression tests
+   - Maintaining existing test suites
+   - Reviewing pull requests
+   - Finding technical documentation
+   - Refining engineering requirements
+   - Investigating production incidents
+
+4. Do NOT include individual names, seniority, team member names,
+   specific products, specific projects, or incidental examples in the
+   workflow name unless they materially define the workflow.
+
+5. Do not create duplicate workflows when different people, roles, or
+   teams perform the same underlying activity.
+
+   However, keep genuinely different activities separate even when they
+   occur within the same broader business process.
+
+6. When in doubt, preserve a distinct workflow if the human task,
+   objective, or output is materially different.
+
+7. Use the same workflow concept consistently across transcripts.
+   Prefer common enterprise workflow terminology over creative or
+   conversational wording.
+
+8. Do not infer a workflow merely because it would logically exist.
+   It must be explicitly supported by the conversation.
+
+9. Be conservative. Do not invent information.
+
+10. Preserve uncertainty.
+
+11. If a field is unknown, use null.
+
+12. ai_suitability must be exactly one of:
+    "High", "Medium", "Low", or "Unknown".
+
+13. confidence must be a number between 0 and 1.
+
+14. estimated_effort_hours must be a number or null.
+
+15. Evidence must be directly supported by the conversation.
+
+16. Do not invent metrics, frequency, effort, or facts.
+
+17. Return ONLY valid JSON. Do not use Markdown code fences.
+
 
 Return exactly this structure:
+
+WORKFLOW NAMING STANDARD:
+
+Every workflow name must represent the reusable human activity that
+could occur repeatedly across an organization.
+
+Use concise names of approximately 3-8 words.
+
+Good examples:
+- Writing unit and regression tests
+- Maintaining existing test suites
+- Reviewing pull requests
+- Finding technical documentation
+- Updating technical documentation
+- Refining engineering requirements
+- Investigating production incidents
+- Preparing release notes
+- Setting up developer environments
+
+Avoid names such as:
+- Senior engineer reviewing junior developer tests
+- Alex spending two hours writing tests
+- Finding documentation in Confluence
+- Incident with payment service X
+- Developer having trouble with their laptop
+
+The workflow name should remain useful if the customer, team, tool,
+project, and individual names were removed from the transcript.
 
 {{
   "source_file": "{filename}",
